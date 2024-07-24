@@ -1,0 +1,51 @@
+@import "~swiper/swiper-bundle.css";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+::-webkit-scrollbar {
+  width: 6px; 
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:#141C3A; 
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #141C3A; 
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; 
+  border-radius: 10px; 
+}
