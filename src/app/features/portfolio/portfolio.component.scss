@@ -1,3 +1,12 @@
+:host{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 2000px !important;
+  overflow-x: hidden;
+}
+
+
 header {
   height: 14vh;
   width: 100%;
@@ -62,7 +71,7 @@ header {
 }
 
 .sobre {
-  width: 100%;
+  width: 300vw;
   height: 60vh;
   background-color: #6e07f3;
   display: flex;
@@ -335,15 +344,21 @@ header {
 
 .projs{
  
-  max-width: 56%;
-  height: 100vh;
-  display: flex;
+  max-width: 70%;
+ 
   gap: 16px;
-  position: relative;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-content: flex-start;
+  flex-direction: column;
+
+
+  .teste{
+    margin-bottom: 40px;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+gap: 8px;
+  }
 
   .text{
     display: flex;
@@ -438,4 +453,147 @@ main {
   flex-direction: column;
 }
 
+@media (max-width: 1540px) and (min-width: 1200px) {
+header{
+  img{
+    width: 6rem;
+    height: 6rem;
+  }
+
+  ul li{
+    font-size: 15px !important;
+  }
+}
+  .container{
+    .imgend{
+      max-width: 39.8125rem !important;
+    }
+  }
+
+  .projs{
+    margin-top: 120px;
+  }
+
+  .teste{
+    
+    .card{
+      width: 274px ;
+      height: 190px ;
+    }
+  }
+
+  .inicial{
+    h1{
+      font-size: 2.1875rem !important;
+      margin-top: 66px;
+    }
+    img{
+      width: 8.125rem !important;
+    }
+  }
+
+  .card-xp{
+    top: -3rem !important;
+    width: 59.5625rem !important;
+    height: 31.125rem !important;
+  }
+
+}
+
+@media (max-width: 1140px) {
+
+  header{
+    img{
+      width: 6rem;
+      height: 6rem;
+    }
+  
+    ul li{
+      font-size: 15px !important;
+    }
+  }
+
+  .container{
+    .imgend{
+      max-width: 29.8125rem !important;
+    }
+  }
+
+  .projs{
+    margin-top: 120px;
+  }
+
+  .teste{
+    
+    .card{
+      width: 274px ;
+      height: 190px ;
+    }
+  }
+
+  .inicial{
+    h1{
+      font-size: 2.1875rem !important;
+      margin-top: 66px;
+    }
+    img{
+      width: 8.125rem !important;
+    }
+  }
+
+  .card-xp{
+    top: -3rem !important;
+    width: 59.5625rem !important;
+    height: 31.125rem !important;
+  }
+
+}
+
+@media (max-width: 720px) {
+  .container{
+    .imgend{
+      max-width: 19.8125rem !important;
+    }
+  }
+
+  header{
+    img{
+      width: 6rem;
+      height: 6rem;
+    }
+  
+    ul li{
+      font-size: 15px !important;
+    }
+  }
+   
+  
+    .projs{
+      margin-top: 120px;
+    }
+  
+    .teste{
+      
+      .card{
+        width: 274px ;
+        height: 190px ;
+      }
+    }
+  
+    .inicial{
+      h1{
+        font-size: 1.1875rem !important;
+        margin-top: 66px;
+      }
+      img{
+        width: 8.125rem !important;
+      }
+    }
+  
+    .card-xp{
+      top: -3rem !important;
+      width: 59.5625rem !important;
+      height: 31.125rem !important;
+    }
+}
 
