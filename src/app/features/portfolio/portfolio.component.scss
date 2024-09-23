@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  max-width: 2000px !important;
+    
   overflow-x: hidden;
 }
 
@@ -549,8 +549,15 @@ header{
 
 }
 
-@media (max-width: 720px) {
+@media (max-width: 920px) {
+  .inicial{
+    span{
+      font-size: 12px !important;
+      text-align: center;
+    }
+  }
   .container{
+    height: auto !important;
     .imgend{
       max-width: 19.8125rem !important;
     }
@@ -581,6 +588,12 @@ header{
     }
   
     .inicial{
+      width: 66% !important;
+    height: auto !important;
+    margin-bottom: 20.5rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
       h1{
         font-size: 1.1875rem !important;
         margin-top: 66px;
@@ -592,8 +605,82 @@ header{
   
     .card-xp{
       top: -3rem !important;
-      width: 59.5625rem !important;
-      height: 31.125rem !important;
+      width: 94% !important;
+      height: 30.125rem !important;
     }
-}
+
+    .sobre {
+      width: 100%;
+      height: auto;
+      .sobremim{
+        margin: 0px 12px !important;
+        h2{
+          
+          font-size: 18px !important;
+         text-align: center;
+        }
+
+        p{
+          font-size: 14px !important;
+        }
+      }
+    }
+
+    .xp-one{
+      h2{
+        font-size: 16px !important;
+      }
+      .stack{
+        margin: 10px 0px 25px 0px !important;
+      }
+    }
+
+    .skills{
+      width: 100%;
+    }
+
+    .aplicacoes{
+      display: flex;
+      width: 100% !important;
+    }
+    .box{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .add-skills{
+      width: auto !important;
+      overflow-y: auto !important;
+      max-height: calc(100% - 30px) !important;
+    }
+
+    .skills{
+      .devops{
+        span{
+          margin-top: 133px;
+        }
+      }
+
+      .ferramentas{
+        span{
+          margin-top: 183px;
+        }
+      
+      
+        }
+
+        .metodologias{
+          span{
+            margin-top: 239px !important;
+          }
+        }
+      }
+
+      header{
+        padding: 0 2rem 0 2rem !important;
+      }
+    }
+
+    
+
 

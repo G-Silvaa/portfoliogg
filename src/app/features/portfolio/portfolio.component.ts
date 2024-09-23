@@ -21,4 +21,6 @@ export class PortfolioComponent {
     { title: 'Chaves', description: 'Description 1', image: 'assets/chavesPNG.PNG' },
     { title: 'Card 4', description: 'Description 1', image: 'assets/intranet-BwslL2mt.png' },
   ];
+
+  
 }
