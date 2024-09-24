@@ -75,13 +75,13 @@ export class PortfolioComponent {
 
   animateText(): void {
     anime({
-      targets: '.welcome',
-      opacity: [0, 1],
-      translateY: [-50, 0],
-      easing: 'easeOutExpo',
-      duration: 2000
+        targets: ['.welcome', '.intro'],
+        opacity: [0, 1],
+        translateY: [-50, 0],
+        easing: 'easeOutExpo',
+        duration: 2000
     });
-  }
+}
 
   
 }

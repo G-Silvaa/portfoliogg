@@ -223,16 +223,57 @@ img{
   align-items: center;
   justify-content: center;
 
+
   .itens{
     width: 96%;
     height: 86%;
     border: 1px solid ;
+    padding: 22px;
 
     .main-skills{
       .skills{
-        width: 100px;
-        height: 100px;
-        border: 1px solid red;
+        width: 165px;
+        height: 68px;
+        background-color:#F5F8FA;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0 10px;
+        border-radius: 20px;
+
+   
+      
+        .back-img {
+          position: relative;
+          width: 42px;
+          height: 42px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+        
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #33A9DC;
+            opacity: 0.2; 
+            z-index: 1;
+            border-radius: 10px;
+          }
+        
+          .icons {
+            display: flex;
+            height: 28px;
+            position: relative;
+            z-index: 2;
+            opacity: 1 !important;
+          }
+        }
+       
       }
     }
   }
