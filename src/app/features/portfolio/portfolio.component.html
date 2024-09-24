@@ -15,3 +15,32 @@
   <p>Uma coleção de projetos em que trabalhei.</p>
 </div>
 </div>
+
+
+<div class="project-cards"> 
+ 
+  <div class="cards" *ngFor="let item of list">
+    <div class="cards-wrap">
+      <div class="photo">
+        <img [src]="item.image" alt="">
+      </div>
+      <div class="container-text-card">
+        <div class="container-t">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.description }}</p>
+        <img class="globo" [src]="item.icon" alt="">
+      </div>
+      
+      </div>
+     
+    </div>
+    </div>
+    
+</div>
+<img class="down" src="../../../assets/border-down.svg" alt="">
+<footer>
+<div class="text-footer">
+  <h3>© GeniltonSilva</h3>
+  <img src="../../../assets/github.svg" alt="">
+</div>
+</footer>
