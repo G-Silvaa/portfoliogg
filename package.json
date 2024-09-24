@@ -39,6 +39,7 @@
     "@angular/compiler-cli": "^16.2.10",
     "@types/animejs": "^3.1.12",
     "@types/jasmine": "~4.3.0",
+    "@types/swiper": "^5.4.3",
     "jasmine-core": "~4.5.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",

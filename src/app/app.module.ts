@@ -1,4 +1,4 @@
-import {NgModule} from '@angular/core';
+import {NgModule , CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
@@ -7,6 +7,9 @@ import {SharedModule} from './shared/shared.module';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthInterceptor } from './core/interceptors/auth.interceptor';
+
+
+
 
 
 
@@ -26,6 +29,9 @@ import { AuthInterceptor } from './core/interceptors/auth.interceptor';
         SharedModule,
         FormsModule,
         ReactiveFormsModule ,
+     
+        
+      
         
         
       
@@ -37,7 +43,8 @@ import { AuthInterceptor } from './core/interceptors/auth.interceptor';
           multi: true
         }
       ],
-    bootstrap: [AppComponent]
+    bootstrap: [AppComponent],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule {
 }
