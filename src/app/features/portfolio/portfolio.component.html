@@ -9,19 +9,31 @@
 
 </div>
 <img class="border-path" src="../../../assets/lado.svg" alt="">
-<div class="projects">
+
+
+<div class="projects" *ngIf="isvisible" [@toggleAnimation]="isvisible ? 'visible' : 'hidden'">
 <div class="projects-text">
   <h2>Meus trabalhos</h2>
   <p>Uma coleção de projetos em que trabalhei.</p>
 </div>
 </div>
 
+<div class="projects" *ngIf="!isvisible" [@toggleAnimation]="!isvisible ? 'visible' : 'hidden'">
+  <div class="projects-text">
+    <h2>Minhas Stacks</h2>
+    <p>Tenho experiência com diversas tecnologias e ferramentas.</p>
+  </div>
+  </div>
 
-<div class="project-cards"> 
+
+  <div class="card-xp" *ngIf="!isvisible" [@toggleAnimation]="!isvisible ? 'visible' : 'hidden'">
+
+  </div>
+<div class="project-cards" *ngIf="isvisible" [@toggleAnimation]="isvisible ? 'visible' : 'hidden'"> 
  
   <div class="cards" *ngFor="let item of list">
     <div class="cards-wrap">
-      <div class="photo">
+      <div class="photo" (click)="openImageModal(item.image)">
         <img [src]="item.image" alt="">
       </div>
       <div class="container-text-card">
@@ -37,8 +49,17 @@
     </div>
     
 </div>
-<img class="down" src="../../../assets/border-down.svg" alt="">
+<div class="toggle">
+<div class="toggle-container" (click)="toggleVisibility()">
+  <div class="toggle-button" [class.active]="!isvisible"></div>
+  <span class="toggle-text left" [class.active]="isvisible">Experiências</span>
+  <span class="toggle-text right" [class.active]="!isvisible">Software Skills</span>
+</div>
+</div>
+
+
 <footer>
+  <img class="down" src="../../../assets/border-down.svg" alt="">
 <div class="text-footer">
   <h3>© GeniltonSilva</h3>
   <img src="../../../assets/github.svg" alt="">

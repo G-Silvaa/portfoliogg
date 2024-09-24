@@ -25,7 +25,6 @@ import { AuthInterceptor } from './core/interceptors/auth.interceptor';
         BrowserAnimationsModule,
         SharedModule,
         FormsModule,
-       
         ReactiveFormsModule ,
         
         

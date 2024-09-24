@@ -6,6 +6,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { ImageModalComponent } from './image-modal/image-modal.component';
 
 
 
@@ -17,6 +18,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     
   
   
+  
+    ImageModalComponent
   ],
   imports: [
     CommonModule,

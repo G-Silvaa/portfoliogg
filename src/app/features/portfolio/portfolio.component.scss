@@ -112,6 +112,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 38px;
+    
 
   .cards{
     width: 374px;
@@ -134,9 +135,21 @@
 width: 100%;
 height: 170px;
 
+
 img{
   width: 100%;
   height: 100%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 14px;
+  
+  
+ 
+
+  &:hover{
+    transform: scale(1.06);
+  }
+
 }
     }
     .container-text-card{
@@ -194,9 +207,76 @@ img{
 }
 .down{
   position: absolute;
-  bottom: -1421px;
+  bottom: 216px;
 }
 
+.card-xp{
+  width: 1024px;
+  height: 570px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  width: 250px;
+  height: 50px;
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  position: relative;
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+}
+
+.toggle-button {
+  width: 50%;
+  height: 100%;
+  background-color: #0a001b;
+  border-radius: 25px;
+  transition: transform 0.3s ease;
+}
+
+.toggle-button.active {
+  transform: translateX(100%);
+}
+
+.toggle-text {
+  position: absolute;
+  width: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  color: #fff;
+  transition: opacity 0.3s ease;
+}
+
+.toggle-text.left {
+  left: 0;
+}
+
+.toggle-text.right {
+  right: 0;
+}
+
+.toggle-text.active {
+  opacity: 1;
+}
+
+.toggle-text:not(.active) {
+  opacity: 0;
+}
+
+.toggle{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 40px;
+}
 
 
 
