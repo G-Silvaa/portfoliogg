@@ -12,7 +12,7 @@ import { ImageModalComponent } from 'src/app/shared/components/image-modal/image
 
 export class PortfolioComponent {
 
-  isvisible = true;  
+  isvisible = false;  
   
   constructor(public dialog: MatDialog) {}
 
