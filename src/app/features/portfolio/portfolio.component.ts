@@ -1,27 +1,13 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ImageModalComponent } from 'src/app/shared/components/image-modal/image-modal.component';
-import { trigger, state, style, transition, animate } from '@angular/animations';
+
 
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss'],
-  animations: [
-    trigger('toggleAnimation', [
-      state('visible', style({
-        opacity: 1,
-        transform: 'translateX(0)'
-      })),
-      state('hidden', style({
-        opacity: 0,
-        transform: 'translateX(-100%)'
-      })),
-      transition('visible <=> hidden', [
-        animate('0.5s ease-in-out')
-      ])
-    ])
-  ]
+  styleUrls: ['./portfolio.component.scss']
+ 
 })
 
 export class PortfolioComponent {
