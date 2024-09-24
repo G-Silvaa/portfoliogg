@@ -23,6 +23,8 @@
   .notebook{
     mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 66%);
     -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 66%);
+    width: 100%;
+    height: auto;
   }
 
   .container-text{
@@ -198,9 +200,14 @@ footer{
   height: 216px;
 
   .text-footer{
-color: white;
-display: flex;
-gap: 1000px;
+    color: white;
+    display: flex;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
 img{
   width: 37px;
   height: 37px;
@@ -227,10 +234,27 @@ img{
   .itens{
     width: 96%;
     height: 86%;
-    border: 1px solid ;
+    max-height: 86%;
+    border: 1px solid;
     padding: 22px;
+    overflow: auto;
+
+    h3{
+      font-size: 24px;
+      line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0a001b;
+    }
 
     .main-skills{
+
+      h4{
+        font-size: 20px;
+        line-height: 1;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #0a001b;
+      margin: 28px 0px 10px 10px;
+      }
       .skills{
         width: 165px;
         height: 68px;
@@ -259,7 +283,7 @@ img{
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: #33A9DC;
+            background-color: var(--bg-color, #33A9DC); 
             opacity: 0.2; 
             z-index: 1;
             border-radius: 10px;
@@ -274,6 +298,12 @@ img{
           }
         }
        
+      }
+
+      .container-skills{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
       }
     }
   }
@@ -329,7 +359,7 @@ img{
 }
 
 .toggle-text:not(.active) {
-  opacity: 0;
+  opacity: 1;
 }
 
 .toggle{
@@ -338,6 +368,42 @@ display: flex;
 align-items: center;
 justify-content: center;
 margin-top: 40px;
+}
+
+@media (max-width: 920px){
+  .card-xp{
+    width: 94% !important;
+  }
+  .skills{
+    width: 139px !important;
+    height: 68px !important;
+  }
+  .container-skills{
+    align-items: center;
+    justify-content: center;
+  }
+  .container-inner{
+    flex-direction: column-reverse !important;
+    gap: 0px !important;
+  }
+  .welcome{
+    font-size: 49px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .container-text{
+   
+    p{
+      font-size: 14px !important;
+      text-align: center;
+    }
+  }
+  .projects-text{
+    p{
+    text-align: center;
+    }
+  }
 }
 
 
