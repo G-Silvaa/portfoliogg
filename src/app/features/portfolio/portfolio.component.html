@@ -81,7 +81,9 @@
         <div class="container-t">
           <h3>{{ item.title }}</h3>
           <p>{{ item.description }}</p>
+          <a [href]="item.url" target="_blank">
           <img class="globo" [src]="item.icon" alt="" />
+        </a>
         </div>
       </div>
     </div>
