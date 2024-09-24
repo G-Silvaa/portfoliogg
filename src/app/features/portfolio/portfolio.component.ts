@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ImageModalComponent } from 'src/app/shared/components/image-modal/image-modal.component';
+import anime from 'animejs/lib/anime.es.js';
+
 
 
 @Component({
@@ -65,6 +67,20 @@ export class PortfolioComponent {
 
   toggleVisibility(): void {
     this.isvisible = !this.isvisible;
+  }
+
+  ngAfterViewInit(): void {
+    this.animateText();
+  }
+
+  animateText(): void {
+    anime({
+      targets: '.welcome',
+      opacity: [0, 1],
+      translateY: [-50, 0],
+      easing: 'easeOutExpo',
+      duration: 2000
+    });
   }
 
   
